@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-slate-200 font-sans antialiased;
+    /* Soft radial glows layered behind the page content */
+    background-image:
+      radial-gradient(40rem 40rem at 80% -10%, rgba(99, 102, 241, 0.15), transparent),
+      radial-gradient(36rem 36rem at 0% 20%, rgba(34, 211, 238, 0.08), transparent);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+@layer components {
+  /* Gradient text used for headline highlights */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-light via-accent to-cyanx bg-clip-text text-transparent;
+  }
+
+  /* Reusable glass / surface card */
+  .card {
+    @apply rounded-2xl border border-surface-border bg-surface-card/70 backdrop-blur-sm
+           transition-all duration-300 hover:border-accent/50
+           hover:shadow-[0_0_40px_-12px_rgba(99,102,241,0.45)];
+  }
+
+  /* Pill tag for tech / skills */
+  .tag {
+    @apply inline-flex items-center rounded-full border border-surface-border
+           bg-white/[0.03] px-3 py-1 text-xs font-medium text-slate-300;
+  }
+
+  /* Section wrapper with consistent vertical rhythm */
+  .section {
+    @apply mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3
+           text-sm font-semibold transition-all duration-200 focus:outline-none
+           focus-visible:ring-2 focus-visible:ring-accent/70;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-accent to-accent-dark text-white
+           shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply btn border border-surface-border bg-white/[0.02] text-slate-200
+           hover:border-accent/50 hover:bg-white/[0.05] hover:-translate-y-0.5;
+  }
+}
+
+/* Custom scrollbar (subtle, dark) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a3a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a4f;
+}

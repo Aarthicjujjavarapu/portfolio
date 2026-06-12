@@ -5,7 +5,6 @@ export const site = {
   email: 'aarthij029@gmail.com',
   location: 'Frisco, TX / Dallas–Fort Worth Area',
   github: 'https://github.com/Aarthicjujjavarapu',
-  // TODO: replace with your real LinkedIn URL
-  linkedin: 'https://www.linkedin.com/in/your-linkedin-handle',
+  linkedin: 'https://www.linkedin.com/in/aarthi-j-b79b931a2',
   resume: '/resume.pdf',
 }

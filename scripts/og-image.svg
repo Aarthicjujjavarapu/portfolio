@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#0d0d18"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.85" cy="0.05" r="0.6">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.05" cy="0.95" r="0.6">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background + glows -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Border frame -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#1f1f2b" stroke-width="2"/>
+
+  <!-- Logo mark + name -->
+  <g transform="translate(80, 80)">
+    <rect width="64" height="64" rx="16" fill="url(#logo)"/>
+    <text x="32" y="46" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800"
+          text-anchor="middle" fill="#ffffff">A</text>
+    <text x="84" y="44" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700"
+          fill="#f1f5f9">Aarthi J</text>
+  </g>
+
+  <!-- Status pill -->
+  <g transform="translate(80, 188)">
+    <rect width="330" height="40" rx="20" fill="#6366f1" fill-opacity="0.10" stroke="#6366f1" stroke-opacity="0.35"/>
+    <circle cx="26" cy="20" r="5" fill="#34d399"/>
+    <text x="44" y="26" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600"
+          fill="#a5b4fc">Open to AI/ML &amp; GenAI Engineer roles</text>
+  </g>
+
+  <!-- Headline -->
+  <text font-family="Inter, Arial, sans-serif" font-weight="800" font-size="64" fill="#ffffff">
+    <tspan x="80" y="300">I build</tspan><tspan dx="22" fill="url(#accent)">AI-powered</tspan>
+    <tspan x="80" y="376">applications that turn data</tspan>
+    <tspan x="80" y="452">into intelligent systems.</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="520" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">
+    AI/ML Engineer &#183; Generative AI &#183; RAG &#183; FastAPI &#183; MLOps
+  </text>
+
+  <!-- Tech tags -->
+  <g font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#cbd5e1">
+    <g transform="translate(80, 555)">
+      <rect width="120" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#1f1f2b"/>
+      <text x="60" y="24" text-anchor="middle">LLMs &amp; RAG</text>
+    </g>
+    <g transform="translate(212, 555)">
+      <rect width="170" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#1f1f2b"/>
+      <text x="85" y="24" text-anchor="middle">Python / FastAPI</text>
+    </g>
+    <g transform="translate(394, 555)">
+      <rect width="160" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#1f1f2b"/>
+      <text x="80" y="24" text-anchor="middle">Cloud &amp; MLOps</text>
+    </g>
+  </g>
+</svg>

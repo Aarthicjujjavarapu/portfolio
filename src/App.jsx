@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -20,6 +22,10 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+
+      {/* Vercel Web Analytics + Speed Insights (no-op in local dev) */}
+      <Analytics />
+      <SpeedInsights />
     </div>
   )
 }
